@@ -1,0 +1,158 @@
+{% extends "Dashboard/dashboard.html" %}
+{% block title %}User{% endblock title %}User
+{% block tasks %}
+<section class="mt-12">
+                <div class="container grid grid-cols-2 gap-6">
+                    {% comment %} first card {% endcomment %}
+                    <div class="flex flex-col gap-4 shadow-xl rounded-lg px-8 py-2 bg-white">
+                        <h2 class="font-bold text-2xl">Todays Tasks</h2>
+                        <div class="flex justify-between">
+                            <div>
+                                <div class="flex gap-2 items-center">
+                                    <div class="h-2 w-2 bg-green-500 rounded-full"></div>
+                                    <span class="font-semibold text-lg">Complete Project Proposla</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="font-bold text-gray-600">Low</p>
+                            </div>
+                        </div>
+
+                        {% comment %} 2nd item  {% endcomment %}
+                        <div class="flex justify-between">
+                            <div>
+                                <div class="flex gap-2 items-center">
+                                    <div class="h-2 w-2 bg-yellow-500 rounded-full"></div>
+                                    <span class="font-semibold text-lg">Review Team Updates</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="font-bold text-gray-600">Normal</p>
+                            </div>
+                        </div>
+
+                         {% comment %} 3rd item  {% endcomment %}
+
+                        <div class="flex justify-between">
+                            <div>
+                                <div class="flex gap-2 items-center">
+                                    <div class="h-2 w-2 bg-blue-500 rounded-full"></div>
+                                    <span class="font-semibold text-lg">Prepare For Clint Meating</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="font-bold text-gray-600">High</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    {% comment %}  2nd card  {% endcomment %}
+                    <div class="flex flex-col gap-y-4 shadow-xl rounded-lg px-8 py-6 bg-white border border-gray-100">
+                        <h2 class="font-bold text-2xl text-gray-800">All Tasks</h2>
+
+                        <div class="grid grid-cols-4 items-center  ">
+                            <div class="font-bold text-gray-500">Task Title</div>
+                            <div class="font-bold text-gray-500 text-center">Priority</div>
+                            <div class="font-bold text-gray-500 text-center">Team</div>
+                            <div class="font-bold text-gray-500 text-right">Created At</div>
+                        </div>
+
+                        {% comment %}  1st item {% endcomment %}
+                        <div class="grid grid-cols-4 items-center">
+                            <div class="font-semibold flex items-center gap-2">
+                                <div class="h-2 w-2 bg-green-400 rounded-full"></div>
+                                <span class="text-gray-700">Test Low Task</span>
+                            </div>
+
+                            <div class="flex justify-center">
+                                <div
+                                    class="bg-blue-100 flex justify-center items-center px-3 py-1 text-blue-700 font-bold text-xs rounded-md w-20">
+                                    Low</div>
+                            </div>
+
+                            <div class="flex -space-x-3 justify-center">
+                                <div
+                                    class="h-8 w-8 bg-blue-400 rounded-full flex justify-center items-center text-white text-xs border-2 border-white">
+                                    CA</div>
+                                <div
+                                    class="h-8 w-8 bg-green-400 rounded-full flex justify-center items-center text-white text-xs border-2 border-white">
+                                    JS</div>
+                                <div
+                                    class="h-8 w-8 bg-yellow-400 rounded-full flex justify-center items-center text-white text-xs border-2 border-white">
+                                    B</div>
+                            </div>
+
+                            <div class="font-bold text-gray-400 text-right text-sm">9 Months Ago</div>
+                        </div>
+
+                    {% comment %}  2nd item {% endcomment %}
+                        <div class="grid grid-cols-4 items-center">
+                            <div class="font-semibold flex items-center gap-2">
+                                <div class="h-2 w-2 bg-yellow-400 rounded-full"></div>
+                                <span class="text-gray-700">Test Task</span>
+                            </div>
+
+                       
+                            <div class="flex justify-center">
+                                <div
+                                    class="bg-gray-100 flex justify-center items-center px-3 py-1 text-gray-700 font-bold text-xs rounded-md w-20">
+                                    Normal</div>
+                            </div>
+
+                            <div class="flex -space-x-3 justify-center">
+                                <div
+                                    class="h-8 w-8 bg-red-400 rounded-full flex justify-center items-center text-white text-xs border-2 border-white">
+                                    AJ</div>
+                                <div
+                                    class="h-8 w-8 bg-violet-400 rounded-full flex justify-center items-center text-white text-xs border-2 border-white">
+                                    EV</div>
+                                <div
+                                    class="h-8 w-8 bg-yellow-400 rounded-full flex justify-center items-center text-white text-xs border-2 border-white">
+                                    B</div>
+                            </div>
+
+                            <div class="font-bold text-gray-400 text-right text-sm">9 Months Ago</div>
+                        </div>
+
+                        {% comment %}  3rd item {% endcomment %}
+                        <div class="grid grid-cols-4 items-center">
+                            <div class="font-semibold flex items-center gap-2">
+                                <div class="h-2 w-2 bg-red-400 rounded-full"></div>
+                                <span class="text-gray-700">Test Task</span>
+                            </div>
+
+                            <div class="flex justify-center">
+                                <div
+                                    class="bg-red-100 flex justify-center items-center px-3 py-1 text-red-700 font-bold text-xs rounded-md w-20">
+                                    High</div>
+                            </div>
+
+                            <div class="flex -space-x-3 justify-center">
+                                <div
+                                    class="h-8 w-8 bg-blue-400 rounded-full flex justify-center items-center text-white text-xs border-2 border-white">
+                                    CA</div>
+                                <div
+                                    class="h-8 w-8 bg-green-400 rounded-full flex justify-center items-center text-white text-xs border-2 border-white">
+                                    JS</div>
+                                <div
+                                    class="h-8 w-8 bg-red-400 rounded-full flex justify-center items-center text-white text-xs border-2 border-white">
+                                    AJ</div>
+                                <div
+                                    class="h-8 w-8 bg-yellow-400 rounded-full flex justify-center items-center text-white text-xs border-2 border-white">
+                                    B</div>
+                            </div>
+
+                            <div class="font-bold text-gray-400 text-right text-sm">10 Months Ago</div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+{% endblock tasks %}
+
